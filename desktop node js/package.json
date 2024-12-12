@@ -1,0 +1,16 @@
+{
+  "name": "desktop-node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "teste-queries": "node teste.js",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mehdi Tmimi",
+  "license": "ISC",
+  "dependencies": {
+    "scanf": "^1.2.0"
+  }
+}
