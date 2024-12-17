@@ -20,9 +20,6 @@ const addUser = (user) =>fetch(URL, {
             data : await response.json()
         }
     })
-
-
-
 module.exports = {
     addUser, getAllUsers
 }
