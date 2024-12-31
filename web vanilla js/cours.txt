@@ -1,0 +1,58 @@
+vanilla js => js pure 
+=> toute utilisation de js independement du contexte sans avoir
+recours aux modules et bibliotheques externes
+
+=> variables, testes, boucles, function, arrow function, objets
+array, callbacks, promise, fetch .. tous ca est present a la fois
+en node js que en vanilla js
+
+en js (browser) on a un objet global nomme: window
+=> represente en memoire l'onglet (tab) courant
+
+proprietes/methodes a utiliser:
+console
+setTimeOut
+document : arbre DOM => code html en memoire => arbre
+chaque element a les proprites 'parentElement' et 'children'
+
+-------- cibler/recuperer en memoire des balises qui se trouvent dans l arbre DOM
+1- chemin complet (non recommende)
+2- par id : document.getElementById(id)=> objet (element)
+3- par class : document.getElementsByClassName(class) => array like (element)
+4- par tag(balise) : document.getElementsByTagName(tag name) => array like (element)
+5- par name (attribut) : document.getElementsByName(name)  => array like (element)
+6- par selector css : - document.querySelector(selector css) => objet element           
+                     - document.querySelectorALL(selecto css) => array like of element         
+
+-------- interaction/lecture/modification
+- le contenu de la balise => innerHTML ou innerText => toujours utilise innerText
+=> lecture et ecriture
+
+- input est speciale=> pour acceder a toute valeur saisie=> value
+
+- attributs : getAttribute("attribut name")
+            setAttribute("attribut name","value")
+            removeAttribute("attribut name")
+- classes: classList attribute
+=> element.classList.add(class1,class2...)
+=> element.classList.remove(class1,class2...)
+=> element.classList.toggle(class1)
+
+- supprimer element => remove()
+
+- events (attribut onclick, ondbclick ... ,) (addEventListner)
+on a deux categories d evenement:
+    - directe : click , doubleclick, mouse hover, input, copy, drag ....
+    - indirectre : load (page), load(image)...
+=> comment configurer les evenements: il faut connaitre l element concerne et l evenemnt souhaite
+
+1- attribut (deconseille) => <element on[Event]>
+
+2- en utilisant js => addEventListner => element.addEventListner(event,callback)
+Nb: le callback accepte un seul parametre qui reprense des informations sur l evenement realise
+
+3- element.on[Event] = callback
+
+- creation dynamique des elements et liaison
+
+========> fetch

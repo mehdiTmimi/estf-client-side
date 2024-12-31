@@ -49,6 +49,7 @@ main{
     border: 0;
     border-radius: 5px;
     transition-duration: 1s;
+    cursor: pointer;
 }
 #sectionForm .controls .reset{
     color: white;
@@ -79,4 +80,11 @@ main{
 #sectionList table td, #sectionList table th{
     border: 1px solid black;
     padding: 10px;
+}
+.custom{
+    background-color: red !important;
+    border: 3px solid blue !important;
+}
+.btn{
+    border-radius: 50% !important;
 }
