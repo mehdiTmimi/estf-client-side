@@ -40,7 +40,7 @@ chaque element a les proprites 'parentElement' et 'children'
 
 - supprimer element => remove()
 
-- events (attribut onclick, ondbclick ... ,) (addEventListner)
+------------ events (attribut onclick, ondbclick ... ,) (addEventListner)
 on a deux categories d evenement:
     - directe : click , doubleclick, mouse hover, input, copy, drag ....
     - indirectre : load (page), load(image)...
@@ -53,6 +53,9 @@ Nb: le callback accepte un seul parametre qui reprense des informations sur l ev
 
 3- element.on[Event] = callback
 
-- creation dynamique des elements et liaison
-
+------------- creation dynamique des elements et liaison
+1- creation : document.createElement(tag name) 
+=> il cree en memoire votre element/balise et il vous retourne un pointeur/objet de cet element
+2- liaison (pere - fils): parent.appendChild(fils)
+=> il va rajouter fils comme dernier enfant au parent
 ========> fetch
