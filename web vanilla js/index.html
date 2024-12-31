@@ -11,17 +11,20 @@
     <header>
         <h1>Client web for REST API</h1>
     </header>
+    <div class="loadingDiv">
+        <img class="hide" src="images/Loading_2.gif" alt="">
+    </div>
     <main>
         <section id="sectionForm">
             <h2>Formulaire d'ajout</h2>
             <div>
-                <input id="x" name="x" id="idInput" type="number" placeholder="id">
-                <input class="x" type="text" placeholder="nom">
-                <input class="x" name="x"  type="text" placeholder="prenom">
-                <input type="number" placeholder="age">
+                <input id="idInput" name="x"  type="number" placeholder="id">
+                <input  id="nomInput" class="x" type="text" placeholder="nom">
+                <input  id="prenomInput" class="x" name="x"  type="text" placeholder="prenom">
+                <input  id="ageInput" type="number" placeholder="age">
                 <div class="controls">
                     <button class="reset">reset</button>
-                    <button class="submit">submit</button>
+                    <button id="submitBtn" class="submit">submit</button>
                 </div>
             </div>
         </section>
@@ -37,8 +40,17 @@
                         <th>options</th>
                     </tr>
                 </thead>
-                <tbody>
-
+                <tbody id="tbody">
+                    
+                    <!--
+                    <tr>
+                        <td>sss</td>
+                        <td>www</td>
+                        <td>www</td>
+                        <td>eee</td>
+                        <td><button>delete</button></td>
+                    </tr>
+                    -->
                 </tbody>
             </table>
         </section>

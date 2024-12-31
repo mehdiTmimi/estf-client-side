@@ -88,3 +88,12 @@ main{
 .btn{
     border-radius: 50% !important;
 }
+.loadingDiv{
+    text-align: center;
+}
+.loadingDiv img{
+    height: 50px;
+}
+.hide{
+    display: none;
+}
